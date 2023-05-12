@@ -16,6 +16,8 @@ def print_line(l):
 
 
 def printbt(head: TreeNode):
+    if not head:
+        return
     queue = [head]
     next_line = []
     print(head.val)
@@ -53,3 +55,6 @@ if __name__ == '__main__':
     #     6
     node6 = TreeNode(6)
     printbt(node6)
+
+    print('---tase case 3---')
+    printbt(None)
